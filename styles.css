@@ -1,0 +1,225 @@
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: hsl(214, 47%, 23%);
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 30px; position: relative;
+    bottom: -10rem; text-transform: uppercase;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.all {
+  width: 25rem;
+}
+
+.game {
+  background-image: url("images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  height: 15rem;
+  margin: 10rem auto 5rem;
+  width: 15rem;
+  background-size: contain;
+  position: relative;
+}
+
+.points {
+  width: 17rem;
+  margin: 35px auto auto;
+  border: 3px solid;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  border-color: hsl(217, 16%, 45%);
+  height: 3rem;
+}
+
+.left {
+  font-weight: 700;
+  line-height: 15px;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: 4rem;
+  height: 68px;
+  text-align: center;
+}
+
+.right p {
+  color: hsl(229, 64%, 46%);
+  font-size: 12px;
+}
+
+.game button {
+  border-radius: 100px;
+  width: 120px;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  height: 120px;
+  background-size: 50px;
+  background-position: center;
+  color: Transparent;
+
+}
+
+.choice {
+  border-width: 10px;
+  border-style: solid;
+}
+
+.paper {
+  background-image: url(images/icon-paper.svg);
+  border-color: hsl(230, 89%, 62%);
+}
+
+.bl {
+  position: absolute;
+  left: -30px;
+  top: -45px;
+}
+
+.scissors {
+  background-image: url(images/icon-scissors.svg);
+  border-color: hsl(39, 89%, 49%);
+}
+
+.br {
+  position: absolute;
+  right: -30px;
+  top: -45px;
+}
+
+.rock {
+  background-image: url(images/icon-rock.svg);
+  border-color: hsl(349, 71%, 52%);
+}
+
+.bb {
+  position: absolute;
+  bottom: 10px;
+  left: 4rem;
+}
+
+.rules button {
+  width: 7rem;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: white;
+  background-color: Transparent;
+  color: white;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: hsl(237, 49%, 15%);
+}
+
+.container {
+  position: absolute;
+  width: 35rem;
+}
+
+
+.bottomR {
+  right: 0;
+  width: 15rem;
+
+  /*top: 0;
+  position: absolute;*/
+}
+.bottomR p {/*
+  margin-top: 0;*/
+  margin-left: 75px;
+}
+
+.bottomM {
+  left: 12rem;
+}
+
+.bottomL {
+  left: 0;
+}
+
+.bottomL p {
+  margin-left: 75px;
+}
+
+.pick {
+  width: 200px;
+  height: 200px;
+  background-size: 80px;
+  border-style: solid;
+  border-width: 20px;
+  background-repeat: no-repeat;
+  border-radius: 150px;
+  background-size: 5rem;
+  background-position: center;
+  background-color: white;
+}
+
+#result {
+  display: none;
+  width: 50%;
+  margin: 5rem auto 0;
+  position: relative;
+  font-weight: 600;
+  height: 30rem;
+}
+
+#again:hover {
+  background-color: hsl(237, 49%, 15%);
+  color: white;
+}
+
+#middle {
+  width: 10rem;
+  margin: 8rem auto 0;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#again {
+  width: 10rem;
+  margin: 2rem auto 0 12.5rem;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: white;
+  background-color: white;
+  color: hsl(237, 49%, 15%);
+  padding: 10px;
+  height: 40px;
+}
+
+#num {
+    font-size: 36px;
+    margin-top: -15px;
+    color: hsl(229, 25%, 31%);
+}
+
+
+@media screen and (min-width: 600px) {
+.all {
+  width: 100%;
+}
+
+.points {
+  width: 30rem;
+}
+
+.rules button {
+  position: absolute;
+  right: 15rem;
+  bottom: 8rem;
+}
+
+}

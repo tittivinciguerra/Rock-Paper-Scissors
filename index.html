@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <div class="all">
+    <div class="points">
+      <p class="left">
+        rock <br>
+        paper <br>
+        scissors
+      </p>
+      <div class="right">
+        <p>
+          score
+        </p>
+        <p id="num">0</p>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div id="result">
+        <div class="bottomL container">
+          <p>you picked</p>
+          <div id="pick1" class="pick">
+          </div>
+        </div>
+        <div class="bottomM container">
+          <p id="middle">bla</p>
+          <button id="again" type="button" name="button">play again</button>
+        </div>
+        <div class="bottomR container">
+          <p>the house picked</p>
+          <div id="pick2" class="pick">
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="game">
+        <button id="p" class="paper choice bl" type="button" name="button">paper</button>
+        <button id="s" class="scissors choice br" type="button" name="button">scissors</button>
+        <button id="r" class="rock choice bb" type="button" name="button">rock</button>
+      </div>
+
+    </div>
+
+  </div>
+
+    <div class="attribution">
+      <div class="rules">
+        <button class="rulesB" type="button" name="button">rules</button>
+      </div>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Tiziana Vinciguerra</a>.
+    </div>
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
