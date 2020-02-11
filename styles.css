@@ -6,9 +6,18 @@ body {
   text-transform: uppercase;
 }
 
-.attribution { font-size: 11px; text-align: center; margin: 30px; position: relative;
-    bottom: -10rem; text-transform: uppercase;}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 30px;
+  position: relative;
+  bottom: -10rem;
+  text-transform: uppercase;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 .all {
   width: 25rem;
@@ -67,7 +76,6 @@ body {
   background-size: 50px;
   background-position: center;
   color: Transparent;
-
 }
 
 .choice {
@@ -127,15 +135,15 @@ button:hover {
   width: 35rem;
 }
 
-
 .bottomR {
-  right: 0;
+  right: -20%;
   width: 15rem;
-
   /*top: 0;
   position: absolute;*/
 }
-.bottomR p {/*
+
+.bottomR p {
+  /*
   margin-top: 0;*/
   margin-left: 75px;
 }
@@ -153,8 +161,8 @@ button:hover {
 }
 
 .pick {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-size: 80px;
   border-style: solid;
   border-width: 20px;
@@ -201,25 +209,98 @@ button:hover {
 }
 
 #num {
-    font-size: 36px;
-    margin-top: -15px;
-    color: hsl(229, 25%, 31%);
+  font-size: 36px;
+  margin-top: -15px;
+  color: hsl(229, 25%, 31%);
 }
 
+@media screen and (min-width: 650px) {
+  .all {
+    width: 100%;
+  }
 
-@media screen and (min-width: 600px) {
-.all {
-  width: 100%;
+  .points {
+    width: 30rem;
+  }
+
+  .rules button {
+    position: absolute;
+    right: 15rem;
+    bottom: 8rem;
+  }
 }
 
-.points {
-  width: 30rem;
+.rules {
+  padding-bottom: 5rem;
 }
 
-.rules button {
-  position: absolute;
-  right: 15rem;
-  bottom: 8rem;
+@media screen and (max-width: 650px) {
+  .all {
+    width: 22.5rem;
+    margin: auto;
+  }
+
+  .attribution {
+    width: 85%;
+    top: 50px;
+  }
+
+  .pick {
+    width: 100px;
+    height: 100px;
+    border-width: 10px;
+    background-size: 3rem;
+  }
+
+  .bottomM {
+    bottom: -2rem;
+    left: -7.7rem;
+  }
+
+  #result {
+    width: 85%;
+  }
+
+  .bottomL p {
+    margin-left: 20px;
+  }
 }
 
+.bottomR p {
+  margin-left: -8px;
+}
+
+.bottomR {
+  right: -120px;
+}
+
+@media screen and (min-width: 651px) {
+  .bottomM {
+    width: 100%;
+    left: 0;
+  }
+
+  #result {
+    width: 33rem;
+  }
+
+  #again {
+    margin-left: 38%;
+  }
+
+  #pick1 {
+    margin-left: -60px;
+  }
+
+  .bottomR p {
+    margin-left: 40px;
+  }
+
+  #middle {
+    margin-left: 200px;
+  }
+
+  .bottomL p {
+    margin-left: 5px;
+  }
 }
